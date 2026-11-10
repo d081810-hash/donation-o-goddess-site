@@ -10,27 +10,31 @@
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png?v=11">
   <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png?v=11">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon-180.png?v=11">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="home.css">
-  <link rel="stylesheet" href="editorial.css">
+  <link rel="stylesheet" href="style.css?v=13">
+  <link rel="stylesheet" href="home.css?v=13">
+  <link rel="stylesheet" href="editorial.css?v=13.4">
+  <link rel="stylesheet" href="desert.css?v=13">
 
-  <script src="app.js" defer></script>
+  <link rel="stylesheet" href="controls.css?v=13.4">
+  <script src="app.js?v=13" defer></script>
+  <script src="controls.js?v=13" defer></script>
+  <script src="effects.js?v=13" defer></script>
 </head>
 <body>
   <div class="recording" aria-label="방송 연출"><span class="rec-dot"></span><span>REC</span><time id="rec-time">00:00:00</time></div>
   <a class="skip-link" href="#about">게임 소개로 바로 가기</a>
-  <header class="site-header"><a class="wordmark" href="#home" aria-label="Donation O, Goddess 홈">D.O.G<span>✦</span></a><button class="menu-toggle" type="button" aria-label="메뉴 열기" aria-expanded="false"><span aria-hidden="true">☰</span> 더 보기</button><button class="replay" type="button">후원 다시 받기</button><nav aria-label="주요 메뉴"><a href="#home">홈</a><a href="#about">게임 소개</a><a href="#film">영상</a><a href="#play">핵심 플레이</a><a href="#heirs">캐릭터</a><a href="#controls">조작</a><a href="#team">개발팀</a></nav></header>
+  <header class="site-header"><a class="wordmark" href="#home" aria-label="Donation O, Goddess 홈">D.O.G<span>✦</span></a><button class="replay" type="button">후원 다시 받기</button><button class="menu-toggle" type="button" aria-label="메뉴 열기" aria-expanded="false"><span aria-hidden="true">☰</span> 더 보기</button><nav aria-label="주요 메뉴"><a href="#home">홈</a><a href="#about">게임 소개</a><a href="#film">영상</a><a href="#play">핵심 플레이</a><a href="#heirs">캐릭터</a><a href="#controls">조작</a><a href="#team">개발팀</a></nav></header>
 
   <div class="scene-spacer" hidden aria-hidden="true"></div>
   <div class="scene-viewport">
   <main class="gallery" aria-label="Donation O, Goddess 소개" tabindex="-1">
     <section class="panel home-stage" id="home" aria-labelledby="home-title">
       <div class="home-backdrop" aria-hidden="true"></div><div class="scene-lines" aria-hidden="true"></div>
-      <div class="home-scene"><div class="home-scene-image"><img src="assets/v3/keyart.webp" alt="금빛 사막을 바라보는 네페르, 인푸, 헤루" width="2399" height="1349" fetchpriority="high"></div></div>
+      <div class="home-scene"><div class="home-scene-image"><img src="assets/keyart-original.png" alt="금빛 사막을 바라보는 네페르, 인푸, 헤루" width="2399" height="1349" fetchpriority="high"></div></div>
       <div class="home-vignette" aria-hidden="true"></div><div class="home-edition" aria-hidden="true"><span>DONATION O, GODDESS</span><i></i><span>THE GODS ARE WATCHING</span></div>
       <h1 id="home-title" class="sr-only" tabindex="-1">Donation O, Goddess</h1>
       <div class="home-actions"><p>신들의 시선 아래, 원정이 시작된다.</p><div><a class="home-primary" href="#about">원정 시작하기</a><a class="home-film" href="#film" aria-label="게임 영상 보기"><span aria-hidden="true">▷</span> 영상 보기</a></div><span class="home-platform">이집트 신화 · 3인 협동 액션 RPG</span></div>
-      <div class="home-heirs" aria-label="원정대원 바로 가기"><a href="#heirs" data-character="0"><img src="assets/v3/nefer-portrait.webp" alt=""><span>네페르</span></a><a href="#heirs" data-character="1"><img src="assets/v5/inpu-portrait.webp" alt=""><span>인푸</span></a><a href="#heirs" data-character="2"><img src="assets/v3/heru-portrait.webp" alt=""><span>헤루</span></a></div>
+      <div class="home-heirs" aria-label="원정대원 바로 가기"><a href="#heirs" data-character="0"><img src="assets/v3/nefer-portrait.webp" alt=""><span>네페르</span></a><a href="#heirs" data-character="1"><img src="assets/v3/heru-portrait.webp" alt=""><span>헤루</span></a><a href="#heirs" data-character="2"><img src="assets/v5/inpu-portrait.webp" alt=""><span>인푸</span></a></div>
       <span class="home-signature" aria-hidden="true">Donation O,<br><em>Goddess.</em></span><a class="home-scroll" href="#about" aria-label="게임 소개로 이동">⌄</a>
     </section>
     <section class="panel about" id="about" aria-labelledby="about-title">
@@ -43,7 +47,7 @@
 
     <section class="panel film light-panel" id="film" aria-labelledby="film-title">
       <div class="film-heading"><span class="section-label">02 / IN MOTION</span><h2 id="film-title">게임 영상</h2><p>세 후계자의 여정을<br>영상으로 만나보세요.</p><a class="text-link" href="https://www.youtube.com/watch?v=Wtymupc6lYs&amp;t=304s" target="_blank" rel="noopener">YouTube에서 보기 ↗</a></div>
-      <div class="film-content"><div class="video"><iframe src="https://www.youtube-nocookie.com/embed/Wtymupc6lYs?start=304" title="Donation O, Goddess 게임 영상 (5분 4초부터)" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><p class="media-caption"><span>01 — GAMEPLAY FILM</span><span>Donation O, Goddess</span></p></div>
+      <div class="film-content"><div class="video"><button class="film-launch" type="button" aria-label="게임 영상 재생"><img src="https://i.ytimg.com/vi/Wtymupc6lYs/maxresdefault.jpg" alt="Donation O, Goddess 플레이 영상" width="1280" height="720"><span class="film-play-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="m12 8 13 8-13 8z"/></svg></span><span class="film-watch-label">플레이 영상 보기</span></button></div><p class="media-caption"><span>01 — GAMEPLAY FILM</span><span>Donation O, Goddess</span></p></div>
     </section>
 
     <section class="panel play" id="play" aria-labelledby="play-title">
@@ -69,13 +73,53 @@
 
     <section class="panel character-showcase" data-character="nefer" id="heirs" aria-labelledby="heirs-title">
       <h2 class="sr-only" id="heirs-title">원정대원 소개</h2><div class="scene-lines" aria-hidden="true"></div><div class="character-mist" aria-hidden="true"></div><div class="character-orbit" aria-hidden="true"><span>✦</span></div><span class="character-word" aria-hidden="true">NEFER</span>
-      <div class="character-art-wrap"><button class="character-art image-trigger" type="button" aria-label="네페르 이미지 확대"><img id="character-art" src="assets/v5/nefer-aligned.webp" alt="셉터를 든 네페르" width="1600" height="1280" loading="lazy"></button><span class="art-caption">CHARACTER ARCHIVE / <span id="art-index">01</span></span></div>
+      <div class="character-art-wrap"><button class="character-art image-trigger" type="button" aria-label="네페르 이미지 확대"><img id="character-art" src="assets/v13/nefer-aligned-2k.webp" alt="셉터를 든 네페르" width="2560" height="2048" loading="lazy"></button><span class="art-caption">CHARACTER ARCHIVE / <span id="art-index">01</span></span></div>
       <div class="character-dossier" id="characters" role="tabpanel" aria-labelledby="tab-nefer" tabindex="0"><p class="section-label">04 / CHARACTERS</p><div class="character-name"><span class="character-symbol" aria-hidden="true">☾</span><h3 id="character-name">네페르 <small>Nefer</small></h3></div><dl class="character-meta"><div><dt>배후 신격</dt><dd id="character-deity">이시스</dd></div><div><dt>포지션</dt><dd id="character-position">원거리 딜러</dd></div><div><dt>무기</dt><dd id="character-weapon">셉터(지팡이)</dd></div></dl><div class="character-story" id="character-story"><p>천재적인 재능으로 주목받는 이시스 신전의 젊은 인재.</p><p>뛰어난 능력을 인정받아 이시스의 현신과도 같다는 평가를 받는다.</p><p>언제나 침착하고 흔들림 없는 모습을 보이지만, 그 이면에는 여리고 다정한 마음을 품고 있다.</p></div></div>
-      <div class="character-selector"><button class="circle-button character-prev" type="button" aria-label="이전 캐릭터"><svg class="nav-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14.5 5 7.5 12l7 7"/></svg></button><div class="character-tabs" role="tablist" aria-label="캐릭터 선택"><button type="button" role="tab" id="tab-nefer" aria-controls="characters" aria-selected="true"><img src="assets/v3/nefer-portrait.webp" alt=""><span>네페르</span></button><button type="button" role="tab" id="tab-inpu" aria-controls="characters" aria-selected="false" tabindex="-1"><img src="assets/v5/inpu-portrait.webp" alt=""><span>인푸</span></button><button type="button" role="tab" id="tab-heru" aria-controls="characters" aria-selected="false" tabindex="-1"><img src="assets/v3/heru-portrait.webp" alt=""><span>헤루</span></button></div><button class="circle-button character-next" type="button" aria-label="다음 캐릭터"><svg class="nav-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9.5 5l7 7-7 7"/></svg></button></div><button class="archive-link" type="button">소개 이미지 확대 ＋</button><span class="scene-index">04 / CHARACTERS</span>
+      <div class="character-selector"><button class="circle-button character-prev" type="button" aria-label="이전 캐릭터"><svg class="nav-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14.5 5 7.5 12l7 7"/></svg></button><div class="character-tabs" role="tablist" aria-label="캐릭터 선택"><button type="button" role="tab" id="tab-nefer" aria-controls="characters" aria-selected="true"><img src="assets/v3/nefer-portrait.webp" alt=""><span>네페르</span></button><button type="button" role="tab" id="tab-heru" aria-controls="characters" aria-selected="false" tabindex="-1"><img src="assets/v3/heru-portrait.webp" alt=""><span>헤루</span></button><button type="button" role="tab" id="tab-inpu" aria-controls="characters" aria-selected="false" tabindex="-1"><img src="assets/v5/inpu-portrait.webp" alt=""><span>인푸</span></button></div><button class="circle-button character-next" type="button" aria-label="다음 캐릭터"><svg class="nav-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9.5 5l7 7-7 7"/></svg></button></div><button class="archive-link" type="button">소개 이미지 확대 ＋</button><span class="scene-index">04 / CHARACTERS</span>
     </section>
     <section class="panel controls light-panel" id="controls" aria-labelledby="controls-title">
-      <div><span class="section-label">05 / CONTROLS</span><h2 id="controls-title">기본 조작</h2><p>동료와 함께 나아갈 준비.</p><div class="keyboard-art" aria-hidden="true"><span>W</span><div><span>A</span><span>S</span><span>D</span></div></div></div>
-      <dl class="key-list"><div><dt>이동</dt><dd><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd></dd></div><div><dt>기본 공격</dt><dd>마우스 왼쪽 버튼</dd></div><div><dt>카메라 회전 / 확대·축소</dt><dd>오른쪽 버튼 드래그 / 휠</dd></div><div><dt>카메라 고정</dt><dd><kbd>L</kbd></dd></div><div><dt>스킬</dt><dd><kbd>Q</kbd><kbd>E</kbd><kbd>R</kbd><kbd>C</kbd></dd></div><div><dt>대시 / 점프</dt><dd><kbd>Shift</kbd> / <kbd>Space</kbd></dd></div><div><dt>상호작용</dt><dd><kbd>F</kbd></dd></div><div><dt>인벤토리 / 신 페이지</dt><dd><kbd>I</kbd> / <kbd>G</kbd></dd></div></dl>
+      <div class="controls-heading"><div><span class="section-label">05 / CONTROLS</span><h2 id="controls-title">기본 조작</h2></div><p>조작을 선택하고, 빛나는 키를 확인하세요.</p></div>
+      <div class="control-workbench">
+        <div class="control-buttons" role="group" aria-label="조작 선택">
+          <button type="button" data-control="move" aria-pressed="true" aria-controls="control-keyboard control-current"><span>이동</span><small>W · A · S · D</small></button>
+          <button type="button" data-control="attack" aria-pressed="false" aria-controls="control-keyboard control-current"><span>기본 공격</span><small>마우스 왼쪽 버튼</small></button>
+          <button type="button" data-control="camera" aria-pressed="false" aria-controls="control-keyboard control-current"><span>카메라 회전</span><small>오른쪽 버튼 드래그</small></button>
+          <button type="button" data-control="zoom" aria-pressed="false" aria-controls="control-keyboard control-current"><span>확대·축소</span><small>마우스 휠</small></button>
+          <button type="button" data-control="camera-lock" aria-pressed="false" aria-controls="control-keyboard control-current"><span>카메라 고정</span><small>Y</small></button>
+          <button type="button" data-control="skill" aria-pressed="false" aria-controls="control-keyboard control-current"><span>스킬</span><small>Q · E · R · C</small></button>
+          <button type="button" data-control="dash" aria-pressed="false" aria-controls="control-keyboard control-current"><span>대시</span><small>Shift</small></button>
+          <button type="button" data-control="jump" aria-pressed="false" aria-controls="control-keyboard control-current"><span>점프</span><small>Space</small></button>
+          <button type="button" data-control="interact" aria-pressed="false" aria-controls="control-keyboard control-current"><span>상호작용</span><small>F</small></button>
+          <button type="button" data-control="inventory" aria-pressed="false" aria-controls="control-keyboard control-current"><span>인벤토리</span><small>I</small></button>
+          <button type="button" data-control="gods" aria-pressed="false" aria-controls="control-keyboard control-current"><span>신 페이지</span><small>G</small></button>
+        </div>
+        <figure class="control-visual">
+          <svg class="keyboard-guide" id="control-keyboard" viewBox="40 210 1685 520" role="img" aria-label="키보드와 마우스. 선택한 조작의 입력 위치가 금빛으로 강조됩니다.">
+            <image href="assets/v13/keyboard-mouse.png" x="0" y="0" width="1774" height="887"/>
+            <defs><mask id="mouse-button-interior" maskUnits="userSpaceOnUse" x="1450" y="260" width="270" height="200"><rect x="1450" y="260" width="270" height="200" fill="white"/><rect x="1562" y="320" width="42" height="85" rx="21" fill="black"/></mask></defs>
+            <g aria-hidden="true">
+              <rect class="input-glow" data-input="W" x="312" y="397" width="73" height="62" rx="8"/>
+              <rect class="input-glow" data-input="A" x="244" y="477" width="75" height="62" rx="8"/>
+              <rect class="input-glow" data-input="S" x="338" y="477" width="73" height="62" rx="8"/>
+              <rect class="input-glow" data-input="D" x="431" y="477" width="74" height="62" rx="8"/>
+              <rect class="input-glow" data-input="Q" x="219" y="397" width="75" height="62" rx="8"/>
+              <rect class="input-glow" data-input="E" x="403" y="397" width="73" height="62" rx="8"/>
+              <rect class="input-glow" data-input="R" x="494" y="397" width="73" height="62" rx="8"/>
+              <rect class="input-glow" data-input="C" x="475" y="557" width="74" height="62" rx="8"/>
+              <rect class="input-glow" data-input="Shift" x="76" y="557" width="190" height="62" rx="8"/>
+              <rect class="input-glow" data-input="Space" x="387" y="638" width="541" height="59" rx="8"/>
+              <rect class="input-glow" data-input="Y" x="677" y="397" width="75" height="62" rx="8"/>
+              <rect class="input-glow" data-input="F" x="524" y="477" width="74" height="62" rx="8"/>
+              <rect class="input-glow" data-input="I" x="864" y="397" width="72" height="62" rx="8"/>
+              <rect class="input-glow" data-input="G" x="617" y="477" width="74" height="62" rx="8"/>
+              <path class="input-glow" data-input="MouseLeft" mask="url(#mouse-button-interior)" d="M1580 271 L1568 272 L1544 274 L1539 276 L1544 278 L1539 280 L1534 282 L1530 284 L1526 286 L1516 288 L1513 290 L1516 292 L1514 294 L1511 296 L1508 298 L1506 300 L1504 302 L1502 304 L1500 306 L1498 308 L1496 310 L1494 312 L1492 314 L1491 316 L1489 318 L1488 320 L1486 322 L1485 324 L1484 326 L1483 328 L1481 330 L1480 332 L1479 334 L1478 336 L1477 338 L1476 340 L1475 342 L1475 344 L1474 346 L1473 348 L1473 350 L1472 352 L1471 354 L1471 356 L1470 358 L1470 360 L1469 362 L1469 364 L1468 366 L1468 368 L1468 370 L1468 372 L1467 374 L1467 376 L1467 378 L1467 380 L1467 382 L1467 384 L1467 386 L1467 388 L1467 390 L1467 392 L1467 394 L1467 396 L1467 398 L1467 400 L1467 402 L1467 404 L1467 406 L1467 408 L1467 410 L1467 412 L1467 414 L1467 416 L1467 418 L1467 420 L1467 422 L1467 424 L1467 426 L1467 428 L1467 430 L1467 432 Q1520 445 1580 445 Z"/>
+              <path class="input-glow" data-input="MouseRight" mask="url(#mouse-button-interior)" d="M1587 271 L1599 272 L1623 274 L1628 276 L1624 278 L1629 280 L1634 282 L1645 284 L1641 286 L1651 288 L1648 290 L1651 292 L1654 294 L1656 296 L1664 298 L1661 300 L1663 302 L1665 304 L1667 306 L1669 308 L1671 310 L1672 312 L1674 314 L1676 316 L1677 318 L1678 320 L1680 322 L1681 324 L1682 326 L1683 328 L1685 330 L1686 332 L1687 334 L1688 336 L1688 338 L1689 340 L1690 342 L1691 344 L1692 346 L1692 348 L1693 350 L1694 352 L1694 354 L1695 356 L1695 358 L1696 360 L1696 362 L1697 364 L1697 366 L1697 368 L1697 370 L1698 372 L1698 374 L1698 376 L1698 378 L1698 380 L1699 382 L1698 384 L1698 386 L1698 388 L1698 390 L1698 392 L1698 394 L1698 396 L1698 398 L1698 400 L1698 402 L1698 404 L1698 406 L1698 408 L1698 410 L1698 412 L1698 414 L1698 416 L1698 418 L1698 420 L1698 422 L1698 424 L1698 426 L1698 428 L1698 430 L1698 432 Q1650 445 1587 445 Z"/>
+              <rect class="input-glow" data-input="Wheel" x="1570" y="330" width="27" height="67" rx="12"/>
+            </g>
+          </svg>
+          <figcaption class="control-current" id="control-current" aria-live="polite" aria-atomic="true"><strong class="control-current-label">이동</strong><span class="control-current-hint">W · A · S · D 키로 이동합니다.</span></figcaption>
+        </figure>
+      </div>
     </section>
 
     <section class="panel team light-panel" id="team" aria-labelledby="team-title">
@@ -84,11 +128,15 @@
     </section>
 
     <section class="panel ending" id="survey" aria-labelledby="ending-title">
-      <span class="ending-star" aria-hidden="true">✦</span><span class="section-label">07 / YOUR NEXT CHAPTER</span>
+      <div class="ending-main"><span class="section-label">07 / YOUR NEXT CHAPTER</span>
       <h2 id="ending-title">다음 후원은,<br>당신의 몫입니다.</h2>
-      <p>게임 체험 후 설문조사에 참여해 주세요.<br>선착순 200분께 커피 기프티콘을 드립니다.</p>
+      </div>
+      <div class="ending-bottom">
+      <p class="ending-note">게임 체험 후 설문조사에 참여해 주세요.<br>선착순 200분께 커피 기프티콘을 드립니다.</p>
       <button class="text-link replay" type="button">후원 다시 받기 <span>↗</span></button>
+      <div class="production-support"><span>제작지원</span><img src="assets/kocca.png" alt="KOCCA 한국콘텐츠진흥원" width="800" height="400" loading="eager"></div>
       <footer><p>Donation O, Goddess</p><a href="https://app.notion.com/p/Donation-O-Goddess-40c5f0f7a07c80368e26ffe42a521f85" target="_blank" rel="noopener">게임 소개 원문 ↗</a><small>글꼴: <a href="https://80.kookmin.ac.kr/vision/font">KMU80 성곡체 · 국민대학교</a> / <a href="https://dev.onestore.net/dev/devprogram">ONE 모바일고딕 · 원스토어</a></small></footer>
+      </div>
     </section>
   </main>
   </div>
@@ -99,14 +147,16 @@
 
   <section class="entry" role="dialog" aria-modal="true" aria-labelledby="entry-title">
     <h2 class="sr-only" id="entry-title">Donation O, Goddess — 신들의 후원을 확인하세요</h2>
-    <div class="entry-art"><div class="entry-scene"><img src="assets/v3/keyart.webp" alt="금빛 사막 앞의 세 원정대원" width="2399" height="1349"><img class="entry-title-art" src="assets/v3/title-original.webp" alt="D.O.G. Donation O, Goddess" width="1000" height="440"></div></div>
-    <div class="entry-shade"></div><div class="viewfinder" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+    <div class="entry-art"><div class="entry-scene"><img src="assets/keyart-original.png" alt="금빛 사막 앞의 세 원정대원" width="2399" height="1349" fetchpriority="high"><img class="entry-title-art" src="assets/v3/title-original.webp" alt="D.O.G. Donation O, Goddess" width="1000" height="440"></div></div>
+    <div class="entry-shade"></div>
     <button class="entry-zoom" type="button" aria-label="대표 이미지 확대">이미지 확대 ＋</button>
     <div class="entry-bottom"><span class="entry-rule">A GIFT FROM THE GODS</span><button class="donation-button" type="button"><span>💎신들이 당신에게 <strong>1000 금화</strong>를 후원했습니다!💎</span><span class="confirm">확인하시겠습니까?</span></button><span class="entry-hint">클릭하여 신들의 후원을 확인하세요</span></div>
     <div class="coin-layer" aria-hidden="true"></div><span class="gold-reward" aria-hidden="true">+1,000 <small>GOLD</small></span>
   </section>
+  <canvas class="gold-dust" aria-hidden="true"></canvas>
   <div class="ink-curtain" aria-hidden="true"></div>
-  <dialog class="lightbox" aria-label="확대된 이미지"><button class="lightbox-close" type="button" aria-label="확대 이미지 닫기">닫기 ✕</button><img alt=""></dialog>
+  <dialog class="lightbox" aria-label="확대된 이미지"><button class="lightbox-close" type="button" aria-label="확대 이미지 닫기">닫기 ✕</button><img alt=""><iframe class="lightbox-video" title="Donation O, Goddess 게임 영상" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></dialog>
   <noscript><style>.entry{display:none}.gallery{overflow:auto}.gallery-footer{display:none}</style></noscript>
 </body>
 </html>
+
