@@ -11,8 +11,8 @@ document.querySelector('.film-launch').addEventListener('click',event=>{
 lightbox.addEventListener('close',()=>{
  lightbox.querySelector('.lightbox-video').removeAttribute('src');
  lightbox.classList.remove('is-video');
- lightbox.setAttribute('aria-label','확대된 이미지');
- lightbox.querySelector('.lightbox-close').setAttribute('aria-label','확대 이미지 닫기');
+ lightbox.setAttribute('aria-label','게임 영상');
+ lightbox.querySelector('.lightbox-close').setAttribute('aria-label','영상 닫기');
 });
 
 // Tiny warm dust motes, emitted along the pointer path; no cursor replacement.

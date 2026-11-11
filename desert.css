@@ -24,8 +24,8 @@ html,body{background:#2b1b11;color:#f3e4c4}
 .about .intro-copy,.about .single-line{color:#71563c}.about .intro-copy em{color:#382313}
 .game-meta{border-color:#91724d55}.game-meta dt{color:#91754f}.game-meta dd{color:#4b321d}
 .about .text-link{color:#5b3c21;border-color:#95734c88}
-.about-art .image-trigger,.play-media{background:#d8bf96;border-color:#9b7d5366;box-shadow:10px 10px 0 #a8875530,-13px -13px 0 #d9c39f99}
-.about-art .image-trigger:before,.play-media:before{border-color:#8a6a4255}
+.about-art .about-image,.play-media{background:#d8bf96;border-color:#9b7d5366;box-shadow:10px 10px 0 #a8875530,-13px -13px 0 #d9c39f99}
+.about-art .about-image:before,.play-media:before{border-color:#8a6a4255}
 .about-art figcaption,.play-visual figcaption{color:#6b4b2b}.image-open-hint{background:#3b2716cc;color:#f1d4a0}
 .film,.controls,.ending{background:#2b1d14 url('assets/v6/grain.svg') repeat;color:#f3e4c8}
 .film-heading p,.controls>div>p,.ending p{color:#c5ad8b}
@@ -80,7 +80,7 @@ button:focus-visible,a:focus-visible{outline:2px solid #c58c39;outline-offset:5p
  .character-showcase:after{background:linear-gradient(transparent,#352216 20%)}
  .character-showcase[data-character=heru] .character-art-wrap{left:calc(50% - 405px);top:30px;width:720px;height:576px}
  .character-showcase[data-character=heru] .character-art{mask-image:linear-gradient(#000 45%,transparent 74%)}
- .about-art .image-trigger,.play-media{box-shadow:5px 5px 0 #ac88553b,-6px -6px 0 #d6bd9499}
+ .about-art .about-image,.play-media{box-shadow:5px 5px 0 #ac88553b,-6px -6px 0 #d6bd9499}
  .production-support{gap:18px;margin-top:35px}.production-support img{width:155px}.production-support>span{font-size:11px}
  .film-play-icon{width:58px;height:58px}
 }
